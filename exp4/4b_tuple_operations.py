@@ -1,0 +1,20 @@
+n=int(input("enter the no.of std"))
+roll_num=()
+for i in range(n):
+    roll=int(input("enter roll num"))
+    roll_num=roll_num+(roll,)
+print("\n tuple of roll number ",roll_num)
+print("1.tuple ",roll_num)
+print("2.frist roll number ",roll_num[0])
+print("3.last roll number ",roll_num[-1])
+print("4.number of students  ",len(roll_num))
+print("5.frist three roll number ",roll_num[:3:])
+search=int(input("enter the roll number to the search"))
+if search in roll_num:
+    print("6.roll number",search,"is  present in the tuple")
+else:
+    print("6.roll number",search,"is not present in the tuple")
+print("7.occurrence of ",search,":",roll_num.count(search))
+print("8.smallest roll number",min(roll_num))
+print("9.largest roll number",max(roll_num))
+print("10.reverse tuple elements",roll_num[::-1])

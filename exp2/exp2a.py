@@ -1,0 +1,5 @@
+ram=int(input("enter the age of ram"))
+sam=int(input("enter the age of sam"))
+khan=int(input("enter the age of ram"))
+print("elder =",max(ram,sam,khan))
+print("elder =",min(ram,sam,khan))
